@@ -1,0 +1,22 @@
+2023-06-14 22:20:43,451 ERROR: An exception occurred while updating the villa:
+Traceback (most recent call last):
+  File "d:\courses\coding\pythonCoding\api_controller_for_MagicVilla\magicvilla_api_controller.py", line 333, in update_partial_villa_through_api
+    response = requests.request("PATCH", url,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 474, in prepare_url
+    enc_params = self._encode_params(params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 121, in _encode_params
+    for k, vs in to_key_val_list(data):
+        ^^^^^
+ValueError: too many values to unpack (expected 2)
