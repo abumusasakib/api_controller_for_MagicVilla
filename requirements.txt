@@ -49,7 +49,6 @@ pickleshare==0.7.5
 platformdirs==2.4.1
 premailer==3.10.0
 prettytable==3.0.0
-prompt-toolkit==3.0.27
 protobuf>=3.19.5
 pure-eval==0.2.2
 PyAutoGUI==0.9.53
