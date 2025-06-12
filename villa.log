@@ -1,19 +1,13 @@
-2023-06-14 22:45:37,607 INFO: Obtaining Villas OK
-2023-06-14 22:45:37,728 INFO: Obtaining Villas OK
-2023-06-14 22:46:03,702 WARNING: Unhandled status code: 415
-2023-06-14 22:50:53,488 INFO: Obtaining Villas OK
-2023-06-14 22:50:53,639 INFO: Obtaining Villas OK
-2023-06-14 22:51:16,441 INFO: Updating Villa OK
-2023-06-14 22:51:17,877 INFO: Obtaining Villas OK
-2023-06-14 22:52:50,154 INFO: Obtaining Villas OK
-2023-06-14 22:52:50,283 INFO: Obtaining Villas OK
-2023-06-14 22:53:24,571 INFO: Obtaining Villas OK
-2023-06-14 22:53:24,733 INFO: Obtaining Villas OK
-2023-06-14 22:56:36,621 INFO: Obtaining Villas OK
-2023-06-14 22:56:36,766 INFO: Obtaining Villas OK
-2023-06-14 22:56:40,299 INFO: Obtaining Villas OK
-2023-06-14 22:56:40,463 INFO: Obtaining Villas OK
-2023-06-14 22:57:00,528 INFO: Obtaining Villas OK
-2023-06-14 22:57:00,708 INFO: Obtaining Villas OK
-2023-06-27 19:23:09,286 INFO: Obtaining Villas OK
-2023-06-27 19:23:09,480 INFO: Obtaining Villas OK
+2025-06-12 10:04:56,420 INFO: Obtaining Villas OK
+2025-06-12 10:06:21,569 ERROR: API Error (Internal Server Error)
+2025-06-12 10:23:08,646 INFO: Obtaining Villas OK
+2025-06-12 10:37:30,242 INFO: Villa Creation Done
+2025-06-12 10:37:38,849 INFO: Obtaining Villas OK
+2025-06-12 10:43:19,059 INFO: Updating Villa OK
+2025-06-12 10:59:28,493 INFO: Updating Villa OK
+2025-06-12 10:59:40,237 INFO: Obtaining Villas OK
+2025-06-12 11:07:09,752 INFO: Obtaining Villa OK
+2025-06-12 11:07:17,989 INFO: Obtaining Villa OK
+2025-06-12 11:10:49,330 INFO: Obtaining Villa OK
+2025-06-12 11:11:02,789 INFO: Deleting Villa OK
+2025-06-12 11:17:05,062 INFO: Obtaining Villas OK

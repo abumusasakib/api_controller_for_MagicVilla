@@ -1,22 +1,20 @@
-2023-06-14 22:45:18,152 ERROR: An exception occurred while updating the villa:
+2025-06-12 10:03:49,429 ERROR: An exception occurred while updating the villa:
 Traceback (most recent call last):
-  File "d:\courses\coding\pythonCoding\api_controller_for_MagicVilla\magicvilla_api_controller.py", line 333, in update_partial_villa_through_api
-    response = requests.request("PATCH", url,
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 573, in request
-    prep = self.prepare_request(req)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
-    p.prepare(
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 368, in prepare
-    self.prepare_url(url, params)
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 474, in prepare_url
-    enc_params = self._encode_params(params)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 121, in _encode_params
-    for k, vs in to_key_val_list(data):
-        ^^^^^
-ValueError: too many values to unpack (expected 2)
+  File "D:\courses\coding\pythonCoding\api_controller_for_MagicVilla\.venv\lib\site-packages\requests\models.py", line 976, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\sakib\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\sakib\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\sakib\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\courses\coding\pythonCoding\api_controller_for_MagicVilla\magicvilla_api_controller.py", line 115, in get_villas_through_api
+    result = response.json()
+  File "D:\courses\coding\pythonCoding\api_controller_for_MagicVilla\.venv\lib\site-packages\requests\models.py", line 980, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

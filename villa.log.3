@@ -1,59 +1,20 @@
-2023-06-14 22:26:10,857 ERROR: An exception occurred while updating the villa:
-Traceback (most recent call last):
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
-    conn = connection.create_connection(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
-    raise err
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
-    httplib_response = self._make_request(
-                       ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
-    self._validate_conn(conn)
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
-    conn.connect()
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 363, in connect
-    self.sock = conn = self._new_conn()
-                       ^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001CC216F6710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 489, in send
-    resp = conn.urlopen(
-           ^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
-    retries = retries.increment(
-              ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='localhost', port=7155): Max retries exceeded with url: /api/VillaAPI (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CC216F6710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "d:\courses\coding\pythonCoding\api_controller_for_MagicVilla\magicvilla_api_controller.py", line 174, in get_villas_through_api
-    response = requests.request("GET", url,
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 587, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 701, in send
-    r = adapter.send(request, **kwargs)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Sakib\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 565, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='localhost', port=7155): Max retries exceeded with url: /api/VillaAPI (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CC216F6710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-06-11 09:32:42,388 INFO: Obtaining Villas OK
+2025-06-11 09:33:03,507 INFO: Deleting Villa OK
+2025-06-11 09:33:06,732 INFO: Obtaining Villas OK
+2025-06-11 09:33:08,846 INFO: Obtaining Villas OK
+2025-06-11 09:33:54,039 INFO: Obtaining Villas OK
+2025-06-11 09:33:56,241 INFO: Obtaining Villas OK
+2025-06-11 09:41:47,274 INFO: Obtaining Villas OK
+2025-06-11 09:41:57,514 INFO: Deleting Villa OK
+2025-06-11 09:42:00,836 INFO: Obtaining Villas OK
+2025-06-11 09:42:02,977 INFO: Obtaining Villas OK
+2025-06-11 09:50:16,116 INFO: Obtaining Villas OK
+2025-06-11 11:06:17,064 INFO: Obtaining Villas OK
+2025-06-11 11:06:36,277 INFO: Updating Villa OK
+2025-06-11 11:06:40,114 INFO: Obtaining Villas OK
+2025-06-11 11:06:42,214 INFO: Obtaining Villas OK
+2025-06-11 11:10:07,734 INFO: Obtaining Villas OK
+2025-06-11 11:21:34,975 INFO: Obtaining Villas OK
+2025-06-11 11:21:52,919 INFO: Obtaining Villas OK
+2025-06-11 11:42:21,049 INFO: Obtaining Villas OK
+2025-06-11 11:51:10,958 INFO: Obtaining Villas OK
